@@ -1,5 +1,5 @@
 let player = {
-    name: "Per",
+    name: "Won",
     chips: 200
 }
 
@@ -16,7 +16,7 @@ let playerEl = document.getElementById("player-el")
 playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
-    let randomNumber = Math.floor( Math.random()*13 ) + 1
+    let randomNumber = Math.floor( Math.random() * 13 ) + 1
     if (randomNumber > 10) {
         return 10
     } else if (randomNumber === 1) {
@@ -60,6 +60,22 @@ function newCard() {
         let card = getRandomCard()
         sum += card
         cards.push(card)
-        renderGame()        
+        renderGame() 
+        playerWon()
+
+    }
+}
+
+function playerWon(){
+    let wonRandom = Math.floor(Math.round() *3) + 100
+    if (sum < 10){
+        console.log("won $0")
+    }else if (sum < 20){
+        console.log("try again")
+    }
+    else if (sum === 21){
+        console.log("won $200")
+    }else{
+        console.log("sorry, you lose")
     }
 }
