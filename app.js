@@ -1,0 +1,1 @@
+let startGame = document.getElementById("start-btn")

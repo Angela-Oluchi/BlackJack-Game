@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.starter,
+.card-sum{
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 50vh;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.starter{
+    display: none;
+}
+.starter button{
+    margin-top: 50px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
